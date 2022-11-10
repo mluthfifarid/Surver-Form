@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <div class="judul">
+      <h1 id="title">
+        Game Form Survey
+      </h1>
+      <p id="description">
+        <i>
+          Please fill out this survey to find out how much people like some of these games
+        </i>
+      </p>
+    </div>
+    <div class="form">
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter Your Name" required>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter Your Email" required>
+        <label for="number" id="number-label">Phone Number</label>
+        <input type="number" id="number" placeholder="Enter Your Phone Number" min="1" max="15" required>
+
+        <label for="dropdown">Select one to describes your current role?</label>
+        <select id="dropdown">
+          <option>Select Role</option>
+          <option value="student">Student</option>
+          <option value="full-time-worker">Full Time Worker</option>
+          <option value="part-time-worker">Part Time Worker</option>
+        </select>
+
+        <fieldset>
+          <legend>Would you like to share this form with your friends or family?</legend>
+          <input id="definitely" type="radio" name="share" value="definitely" checked>
+          <label for="definitely">Definitely</label>
+          <br>
+          <input id="maybe" type="radio" name="share" value="maybe">
+          <label for="maybe">Maybe</label>
+          <br>
+          <input id="not-recommend" type="radio" name="share" value="not-recommend">
+          <label for="not-recommend">Not Recommend</label>
+        </fieldset>
+
+        <div>
+          <label for="checkbox">Select your favorite Game (Check all that apply)</label>
+          <br>
+          <input type="checkbox" id="game1" name="game1" value="GTAV">
+          <label for="game1">Grand Theft Auto V</label>
+          <br>
+          <input type="checkbox" id="game2" name="game2" value="CODWZ">
+          <label for="game2">Call of Duty Warzone</label>
+          <br>
+          <input type="checkbox" id="game3" name="game3" value="Battlefield">
+          <label for="game3">Battlefield</label>
+          <br>
+        </div>
+
+        <div>
+          <label for="textarea">Please fill in if you have any comments or suggestions</label>
+          <textarea name="comment" id="comment" rows="5" placeholder="Enter Your Comment Here..."></textarea>
+        </div>
+
+        <div>
+          <input type="submit" id="submit">
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
